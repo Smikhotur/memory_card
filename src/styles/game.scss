@@ -1,0 +1,134 @@
+.game {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+  flex-wrap: wrap;
+  max-width: 880px;
+  max-height: 800px;
+
+  @media (max-width: 837px) {
+    max-width: 780px;
+    max-height: 800px;
+  }
+
+  @media (max-width: 644px) {
+    max-width: 480px;
+    max-height: 680px;
+  }
+
+  @media (max-width: 444px) {
+    max-width: 310px;
+    max-height: 310px;
+  }
+
+  &__name {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    @include FontSet("Helvetica Neue Roman", 18px, 22px);
+    color: white;
+
+    @media (max-width: 837px) {
+      left: 70px;
+      @include FontSet("Helvetica Neue Roman", 12px, 14px);
+    }
+  }
+
+  &__text {
+    position: absolute;
+    top: -9px;
+    right: 40px;
+    @include FontSet("Helvetica Neue Roman", 18px, 22px);
+    color: white;
+
+    @media (max-width: 837px) {
+      right: 110px;
+      @include FontSet("Helvetica Neue Roman", 12px, 14px);
+    }
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    margin: 2px;
+    border-radius: 5px;
+    background-color: rgb(216, 213, 213);
+    box-shadow: 2px 2px 3px black;
+    opacity: 0.9;
+
+    @media (max-width: 837px) {
+      width: 150px;
+      height: 150px;
+    }
+
+    @media (max-width: 644px) {
+      width: 100px;
+      height: 100px;
+    }
+
+    @media (max-width: 444px) {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  &__cart {
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: contain;
+
+    @media (max-width: 837px) {
+      width: 150px;
+      height: 150px;
+    }
+
+    @media (max-width: 644px) {
+      width: 100px;
+      height: 100px;
+    }
+
+    @media (max-width: 444px) {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  &__buter {
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: contain;
+
+    @media (max-width: 837px) {
+      width: 150px;
+      height: 150px;
+    }
+
+    @media (max-width: 644px) {
+      width: 100px;
+      height: 100px;
+    }
+
+    @media (max-width: 444px) {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
+
+#timer {
+  position: absolute;
+  top: -9px;
+  right: 10px;
+  color: white;
+  @include FontSet("Helvetica Neue Roman", 18px, 22px);
+
+  @media (max-width: 837px) {
+    right: 70px;
+    margin-right: 10px;
+    @include FontSet("Helvetica Neue Roman", 12px, 14px);
+  }
+}
