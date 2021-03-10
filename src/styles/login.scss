@@ -51,6 +51,8 @@
 }
 
 .btn {
+  position: relative;
+  z-index: 500;
   display: block;
   width: 150px;
   height: 40px;
