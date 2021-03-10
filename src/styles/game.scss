@@ -3,7 +3,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 10px;
   flex-wrap: wrap;
   max-width: 880px;
   max-height: 800px;
@@ -30,7 +29,7 @@
 
   &__name {
     position: absolute;
-    top: -10px;
+    top: -20px;
     left: 10px;
     @include FontSet("Helvetica Neue Roman", 18px, 22px);
     color: white;
@@ -43,7 +42,7 @@
 
   &__text {
     position: absolute;
-    top: -9px;
+    top: -20px;
     right: 40px;
     @include FontSet("Helvetica Neue Roman", 18px, 22px);
     color: white;
@@ -156,7 +155,7 @@
 
 #timer {
   position: absolute;
-  top: -9px;
+  top: -20px;
   right: 10px;
   color: white;
   @include FontSet("Helvetica Neue Roman", 18px, 22px);
