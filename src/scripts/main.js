@@ -195,7 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
           cartButer[0].setAttribute('class', 'game__buter open');
           cartButer[1].setAttribute('class', 'game__buter open');
         },
-        500
+        300
         );
       }
     }
