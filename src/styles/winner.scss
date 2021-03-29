@@ -1,0 +1,46 @@
+.winner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+
+  &__title {
+    @include FontSet("Helvetica Neue Bold", 35px, 80px);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 80px;
+    color: yellowgreen;
+
+    @media (max-width: 568px) {
+      @include FontSet("Helvetica Neue Bold", 25px, 60px);
+      text-align: center;
+      margin: 0 15px;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__start-again {
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    // margin-right: 50px;
+    text-transform: uppercase;
+    @include FontSet("Helvetica Neue Roman", 12px, 22px);
+    background-color: rgb(248, 77, 77);
+    opacity: 0.9;
+
+    &:hover {
+      background-color: rgb(255, 81, 0);
+    }
+
+    @media (max-width: 568px) {
+      margin-top: 50px;
+    }
+
+  }
+}

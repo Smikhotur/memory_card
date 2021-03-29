@@ -7,7 +7,34 @@
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
+    <div class="wrapper">
+      <section class="login">
+        <form>
+          <div class="login__form-group">
+            <label for="name__people" class="login__name">Your Name</label>
+            <input
+              id="name__people"
+              type="name"
+              class="login__control"
+              required
+            >
+          </div>
+
+          <button
+            class="btn login__btn"
+          >
+            START GAME
+          </button>
+        </form>
+      </section>
+
+      <section class="game">
+        <span id="output"></span>
+        <div id="slider"></div>
+      </section>
+      <section class="winner"></section>
+      <section class="end"></section>
+    </div>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

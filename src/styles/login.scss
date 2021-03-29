@@ -1,0 +1,70 @@
+.wrapper {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 837px) {
+    max-width: 780px;
+  }
+
+  @media (max-width: 644px) {
+    max-width: 480px;
+  }
+
+  @media (max-width: 444px) {
+    max-width: 310px;
+  }
+
+  &__name {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    @include FontSet("Helvetica Neue Bold", 22px, 24px);
+    color: rgb(13, 201, 226);
+  }
+
+  &__control {
+    display: block;
+    width: 150px;
+    height: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+    @include FontSet("Helvetica Neue Roman", 18px, 22px);
+    background-color: transparent;
+    border: 1px solid red;
+    color: rgb(116, 250, 6);
+    border-radius: 5px;
+  }
+
+  &__error {
+    position: absolute;
+    color: red;
+    @include FontSet("Helvetica Neue Roman", 12px, 16px);
+  }
+}
+
+.btn {
+  position: relative;
+  z-index: 500;
+  display: block;
+  width: 150px;
+  height: 40px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 0 auto;
+  background: transparent;
+  @include FontSet("Helvetica Neue Roman", 18px, 22px);
+  // opacity: 0.3;
+
+  &:hover {
+    background-color: rgb(255, 81, 0);
+  }
+}
