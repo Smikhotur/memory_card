@@ -5,6 +5,6 @@
 3. Run `npm install` (or just `npm i`).
 4. Run `npm start`.
 
-    - [DEMO LINK](https://<your_account>.github.io/<repo_name>/)
+    - [DEMO LINK](https://Smikhotur.github.io/<repo_name>/)
 
 Technologies used:  HTML, SASS(SCSS), JS DOM
