@@ -1,4 +1,7 @@
-# Base layout template with Gulp, SCSS and Stylelint
-1. Create a repo using this template
-1. Replace `<your_account>` and `<repo_name>` with your Github username and the new repo name
+# Memory card
+## Instructions
+1. **Fork** the repo.
+2. **Clone** the forked one. (The project link should have your name but not `mate-academy`)
+3. Run `npm install` (or just `npm i`).
+4. Run `npm start`.
     - [DEMO LINK](https://<your_account>.github.io/<repo_name>/)
